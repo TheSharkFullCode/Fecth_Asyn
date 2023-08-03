@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fecht asyn y wait, asincronia</title>
+</head>
+<body>
+    <div>
+        <span>
+            Haz una petición a la API y consigue una lista de los personajes de Stars Wars. <br> <br>
+Busca cómo conseguir hacer una petición para que te llegue sólo la información de Darth Vader, y muéstrala por consola. <br> <br>
+Muestra por consola la lista de películas en las que aparece el personaje de Luke Skywalker. <br>
+Busca el personaje de Leia Organa y consigue que se muestre por consola la información del planet aen el que vivie: Alderaan. <br> <br>
+En este ejercicio, debes conseguir el resultado final encadenando varias peticiones a la API. <br> <br> 
+Obtén la lista completa de personajes, y filtra el resultado para guaradar la url de C-3PO. <br>  <br>
+Haz una petición para C-3PO usando dicha información y encuentra las películas en las que aparece, guardándolas en una variable. <br> <br>
+Haz una petición por cada película para mostrar por consola su información.
+        </span>
+
+        <span>
+            método 
+fetch()
+ para realizar una solicitud HTTP GET a la URL "https://swapi.dev/api/people/". Luego, se utiliza el método 
+then() <br>
+ para manejar la respuesta exitosa de la solicitud y convertir la respuesta de la solicitud en un objeto JSON. Luego, se utiliza el método 
+then() <br>
+ para manejar el objeto JSON y mostrar los datos en la consola.
+
+También se define una función asíncrona llamada 
+getList
+ que utiliza el método 
+fetch() <br>
+ para realizar una solicitud HTTP GET a la misma URL. Luego, utiliza el método 
+json()
+ para convertir la respuesta de la solicitud en un objeto JSON. Finalmente, utiliza el método 
+console.log()
+ para mostrar los datos en la consola.
+
+En resumen, el código utiliza el método 
+fetch()
+ para realizar una solicitud HTTP GET a la URL "https://swapi.dev/api/people/" y luego utiliza el método 
+then()
+ para manejar la respuesta exitosa de la solicitud y mostrar los datos en la consola. También define una función asíncrona llamada 
+getList
+ que utiliza el método 
+fetch()
+ para realizar una solicitud HTTP GET a la misma URL y luego utiliza el método 
+json()
+ para convertir la respuesta de la solicitud en un objeto JSON.
+        </span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
