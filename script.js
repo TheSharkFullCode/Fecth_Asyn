@@ -66,6 +66,14 @@ fetch('https://swapi.dev/api/films/')
   .then(luke => {
 
 
+//     En el primer  .then() , se convierte la respuesta en formato JSON utilizando  response.json() .  
+ 
+// En el segundo  .then() , se accede a la propiedad  results  del objeto JSON obtenido y se utiliza el método  map()  para crear un nuevo array con los títulos de las películas.  
+ 
+// Finalmente, se muestra el array de títulos de películas en la consola utilizando  console.log() .  
+
+
+
     const movies = luke.results.map(film => film.title);
 
 
